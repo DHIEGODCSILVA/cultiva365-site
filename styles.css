@@ -40,11 +40,27 @@ h1 { color: #fff; font-size: clamp(2.3rem, 6vw, 4.8rem); max-width: 760px; overf
 .privacy { padding: 72px 0; max-width: min(760px, calc(100% - 48px)); }
 .privacy h2 { font-size: 1.35rem; }
 .privacy p { margin: 14px 0 0; font-size: .9rem; }
+.text-link { display: inline-block; margin-top: 16px; color: var(--green); font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.text-link:hover { color: var(--growth); }
 footer { background: var(--green); padding: 28px 0; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
 .footer-inner img { width: 175px; filter: brightness(0) invert(1); opacity: .95; }
 footer a { color: #fff; }
 footer a:hover { color: var(--soft); }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px 22px; }
+.legal-page { background: var(--sand); }
+.legal-hero { background: radial-gradient(circle at 82% 10%, rgba(167,211,123,.55), transparent 26%), linear-gradient(120deg, #093d28, var(--green)); color: #fff; padding: 72px 0; }
+.legal-hero h1 { max-width: 760px; }
+.legal-hero p { max-width: 680px; margin: 18px 0 0; font-size: 1.05rem; }
+.legal-content { width: min(820px, calc(100% - 48px)); margin: 0 auto; padding: 72px 0 88px; }
+.legal-content section { padding: 28px 0; border-bottom: 1px solid #dedbd1; }
+.legal-content section:last-child { border-bottom: 0; }
+.legal-content h2 { font-size: clamp(1.3rem, 2.5vw, 1.75rem); }
+.legal-content p, .legal-content li { font-size: .98rem; }
+.legal-content p { margin: 14px 0 0; }
+.legal-content ul { margin: 14px 0 0; padding-left: 22px; }
+.legal-content li + li { margin-top: 8px; }
+.pending-note { margin-top: 16px; padding: 16px 18px; border-left: 4px solid var(--sun); background: #fff8e7; color: #4b3a10; }
 
 @media (max-width: 680px) {
   .site-header { min-height: 68px; }
@@ -55,5 +71,8 @@ footer a:hover { color: var(--soft); }
   .hero p:not(.eyebrow) { max-width: 320px; }
   .cards { grid-template-columns: 1fr; }
   .contact-inner, .footer-inner { align-items: flex-start; flex-direction: column; gap: 18px; }
+  .footer-links { justify-content: flex-start; }
   .solutions { padding: 64px 0; }
+  .legal-hero { padding: 56px 0; }
+  .legal-content { padding: 48px 0 64px; }
 }
